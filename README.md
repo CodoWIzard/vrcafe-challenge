@@ -37,4 +37,4 @@ Open [http://vrcafe-challenge.vercel.app
 - **Drag & Drop** - Drag + touch events for mobile
 - **Component Architecture** - clean code and reusable friendly
 
-![Alt text](public/code.png)
+![Alt text](opdracht/public/code.png)
