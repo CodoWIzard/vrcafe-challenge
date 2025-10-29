@@ -36,3 +36,5 @@ Open [http://vrcafe-challenge.vercel.app
 - **Local Storage** - Data storage and functioning in sessions
 - **Drag & Drop** - Drag + touch events for mobile
 - **Component Architecture** - clean code and reusable friendly
+
+![Alt text](public/code.png)
