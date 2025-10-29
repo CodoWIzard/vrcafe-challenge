@@ -20,17 +20,17 @@ export const TodoApp = () => {
     moveTask,
   } = useTodos();
 
-  const handleDragStart = (e: React.DragEvent, taskId: string) => {
+  const handleDragStart = (e: React.DragEvent<HTMLDivElement>, taskId: string) => {
     e.dataTransfer.setData("taskId", taskId);
   };
 
-  const handleDrop = (e: React.DragEvent, categoryId: string) => {
+  const handleDrop = (e: React.DragEvent<HTMLDivElement>, categoryId: string) => {
     e.preventDefault();
     const taskId = e.dataTransfer.getData("taskId");
     if (taskId) moveTask(taskId, categoryId);
   };
 
-  const handleDragOver = (e: React.DragEvent) => {
+  const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
   };
 
@@ -239,7 +239,7 @@ export const TodoApp = () => {
                                   : ""
                               }`}
                               draggable
-                              onDragStart={(e) => handleDragStart(e, task.id)}
+                              onDragStart={(e: any) => handleDragStart(e, task.id)}
                               onTouchStart={() => handleTouchStart(task.id)}
                               onTouchMove={handleTouchMove}
                               onTouchEnd={handleTouchEnd}
