@@ -16,5 +16,5 @@ npm i
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-LIVE:...
+Open [http://vrcafe-challenge.vercel.app
+](http://vrcafe-challenge.vercel.app) in your browser.
